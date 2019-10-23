@@ -23,6 +23,7 @@ d3.csv("./data/dataEveryYear.csv")
     funcs = makeAxesAndLabels()
     populateDropdown()
     makeScatterPlot(1960, funcs)
+})
 .then(() => {
     d3.select('#dropdown').on('change', function() {
         console.log('clicked') 
@@ -199,4 +200,3 @@ function findMinMax(x, y) {
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 }
-})
