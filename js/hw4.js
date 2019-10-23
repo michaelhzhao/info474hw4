@@ -121,6 +121,7 @@ function plotData(map) {
       .style('stroke', '#025D8C')
       .style('stroke-width', '2')
       .style('fill', "white")
+      .style('fill-opacity', 0)
       .on("mouseover", (d) => {
         div.transition()
           .duration(200)
